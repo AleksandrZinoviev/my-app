@@ -1,0 +1,13 @@
+.nav {
+    grid-area: n;
+    background-color:darkgreen;
+}
+
+.item {
+    margin: 0;
+    padding: 0;
+}
+
+.item-link {
+    color: white;
+}
