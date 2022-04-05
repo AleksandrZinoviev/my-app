@@ -1,6 +1,6 @@
 import React from "react";
 import styleSelect from "./Main.module.css";
-
+import MyPosts from "./MyPosts/MyPosts";
 const Main = () => {
     return(
         <main className={styleSelect.content}>
@@ -10,18 +10,7 @@ const Main = () => {
             <div>
                 ava + description
             </div>
-            <div>
-                My posts
-            </div>
-            <div>
-                New post
-            </div>
-            <div>
-                post 1
-            </div>
-            <div>
-                post 2
-            </div>
+        <MyPosts />
     </main>
     );
 }
