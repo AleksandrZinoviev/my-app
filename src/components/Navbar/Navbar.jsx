@@ -5,8 +5,8 @@ const Navbar = () => {
     return (
     <nav className={styleSelect.nav}>
       <ul>
-        <li className={styleSelect.item}><a className={styleSelect.item_link} href="#">Profile</a></li>
-        <li className={styleSelect.item}><a className={styleSelect.item_link} href="#">Messages</a></li>
+        <li className={styleSelect.item}><a className={styleSelect.item_link} href="/main">Profile</a></li>
+        <li className={styleSelect.item}><a className={styleSelect.item_link} href="/dialogs">Messages</a></li>
         <li className={styleSelect.item}><a className={styleSelect.item_link} href="#">News</a></li>
         <li className={styleSelect.item}><a className={styleSelect.item_link} href="#">Music</a></li>
         <li className={styleSelect.item}><a className={styleSelect.item_link} href="#">Settings</a></li>
