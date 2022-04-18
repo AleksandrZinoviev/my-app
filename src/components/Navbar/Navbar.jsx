@@ -1,25 +1,28 @@
 import React from "react"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styleSelect from "./Navbar.module.css";
+
+const navData = ({isActive}) => isActive ? styleSelect.active : ""
+
 
 const Navbar = () => {
     return (
     <nav className={styleSelect.nav}>
       <ul>
         <li className={styleSelect.item}>
-          <Link className={styleSelect.item_link} to="/main">Profile </Link>
+          <NavLink className={navData} to="/main">Profile </NavLink>
         </li>
         <li className={styleSelect.item}>
-          <Link className={styleSelect.item_link} to="/dialogs">Messages</Link>
+          <NavLink className={navData} to="/dialogs">Messages</NavLink>
         </li>
         <li className={styleSelect.item}>
-          <a className={styleSelect.item_link} href="#">News</a>
+          <NavLink className={navData} to="/news">News</NavLink>
         </li>
         <li className={styleSelect.item}>
-          <a className={styleSelect.item_link} href="#">Music</a>
+          <NavLink className={navData} to="/music">Music</NavLink>
         </li>
         <li className={styleSelect.item}>
-         <a className={styleSelect.item_link} href="#">Settings</a>
+         <NavLink className={navData} to="/settings">Settings</NavLink>
         </li>
       </ul>
     </nav>
