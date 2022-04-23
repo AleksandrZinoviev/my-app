@@ -1,6 +1,7 @@
 .nav {
     grid-area: n;
-    background-color:darkgreen;
+    background: url('https://cdn.shortpixel.ai/spai2/w_1920+q_lossy+ret_img+to_webp/https://kleo.seventhqueen.com/wp-content/uploads/2020/07/kleo-buddypress-theme.jpg');
+    background-size: cover;
 }
 
 .item {
