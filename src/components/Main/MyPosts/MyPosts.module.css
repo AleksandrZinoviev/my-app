@@ -2,3 +2,11 @@
     grid-area: c;
     background-color: royalblue;
 }
+
+.myposts_wrapper {
+    padding: 10px;
+}
+
+.posts {
+    margin-top: 15px;
+}

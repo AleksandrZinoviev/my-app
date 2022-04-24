@@ -3,11 +3,13 @@ import styleSelect from "./MyPosts.module.css";
 import Post from "./Post/Post";
 const MyPosts = () => {
     return(
-            <div>
-                My posts
+            <div className={styleSelect.myposts_wrapper}>
+                <h3>My posts</h3>
                 <div>
                     New post
+                    <div>
                     <textarea></textarea>
+                    </div>
                     <button>Add post</button>
                     <button>Remove</button>
                 </div>
