@@ -7,6 +7,10 @@ const MyPosts = () => {
         {id: 0, message: "Hi, how are you?", like: 20},
         {id: 1, message: "It`s my first post.", like: 60}
     ]
+    
+    let postsListArray = postArray.map((el) => {
+        return <Post message={el.message} like={el.like}/>
+    });
 
     return(
             <div className={styleSelect.myposts_wrapper}>
@@ -20,8 +24,7 @@ const MyPosts = () => {
                     <button>Remove</button>
                 </div>
                 <div className={styleSelect.posts}>
-                    <Post message={postArray[0].message} like={postArray[0].like}/>
-                    <Post message={postArray[1].message} like={postArray[1].like}/>
+                    {postsListArray}
                 </div>
             </div>
     );
