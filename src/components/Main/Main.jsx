@@ -3,11 +3,12 @@ import styleSelect from "./Main.module.css";
 import MyPosts from "./MyPosts/MyPosts";
 import Maininfo from "./Maininfo/Maininfo";
 
-const Main = () => {
+const Main = (props) => {
+    
     return(
         <main className="">
             <Maininfo />
-            <MyPosts />
+            <MyPosts postArray={props.postArray}/>
         </main>
     );
 }
