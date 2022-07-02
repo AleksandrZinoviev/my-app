@@ -15,6 +15,7 @@ const DialogItem = (props) => {
 }
 
 const Messageitem = (props) => {
+    
     return (
         <li className={styleSelect.message_item}>{props.msg}</li>
     )
@@ -22,11 +23,11 @@ const Messageitem = (props) => {
 const Dialogs = (props) => {
 
     
-    let dialogsItem = props.dialogsListArray.map((el) => {
+    let dialogsItem = props.state.dialogsListArray.map((el) => {
        return <DialogItem name={el.name} id={el.id}/>
     });
 
-    let messagesItem = props.messagesListArray.map((el) => {
+    let messagesItem = props.state.messagesListArray.map((el) => {
         return <Messageitem msg={el.msg}/>
      });
     return (

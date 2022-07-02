@@ -8,7 +8,7 @@ const Main = (props) => {
     return(
         <main className="">
             <Maininfo />
-            <MyPosts postArray={props.postArray}/>
+            <MyPosts postArray={props.state.postArray}/>
         </main>
     );
 }
