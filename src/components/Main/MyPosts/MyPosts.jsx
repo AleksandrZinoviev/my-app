@@ -17,7 +17,7 @@ const MyPosts = (props) => {
                     <div>
                     <textarea></textarea>
                     </div>
-                    <button>Add post</button>
+                    <button onClick={()=>{alert('hello')}}>Add post</button>
                     <button>Remove</button>
                 </div>
                 <div className={styleSelect.posts}>
